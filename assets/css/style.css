@@ -1,0 +1,66 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --light: rgb(223, 98, 227);
+    --border-radius: 5px;
+}
+* {
+    
+}
+body{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin:20px;
+    color: var(--light);
+}
+
+header p {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+main {
+    margin:24px;
+}
+.snippets {
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap:24px;
+
+}
+
+.card {
+    border: 1px dashed white;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    border: 1px solid white;
+    padding-left: 10px;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    color: var(--light);
+    position: relative;
+    margin-top: -30px;
+   
+}
+
+section p {
+    color: var(--light);
+    font-size: 14px;
+    margin:8px;
+    line-height: 20px;
+}
+
+.code {
+    padding:0px;
+}
