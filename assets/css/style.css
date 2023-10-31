@@ -2,65 +2,127 @@
     /* declare a variable with `--` syntax */
     --light: rgb(223, 98, 227);
     --border-radius: 5px;
+    --selected: rgb(61, 204, 223);
+    --outer-space: #33393f;
 }
-* {
-    
-}
-body{
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
+
+::selection {
+    background-color: var(--selected);
+    color: var(--outer-space);
+  }
 
 h1 {
     text-align: center;
     margin:20px;
     color: var(--light);
+    
 }
 
 header p {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 16px;
+    margin: 0 20px 40px 20px;
     text-align: center;
     line-height: 1.5;
     font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
     margin:24px;
 }
-.snippets {
+
+.code-content {
 display:grid;
 grid-template-columns: repeat(3,1fr);
 grid-gap:24px;
+flex: 0 1 auto;
+}
 
+.card .code-header {
+    transition: all 0.5s ease-in-out;}
+
+.card:hover,
+.card:hover, .code-header:hover {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1)}
+
+
+h2 {
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-top:6px;
+    padding-bottom:6px;
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    color: var(--light);
+    margin-top: -30px;
 }
 
 .card {
     border: 1px dashed white;
     padding: 15px;
     margin-bottom: 25px;
-}
-
-h2 {
-    border: 1px solid white;
-    padding-left: 10px;
-    border-radius: var(--border-radius);
-    font-size: 20px;
-    color: var(--light);
-    position: relative;
-    margin-top: -30px;
-   
+    font-size: 12px;
+    line-height: 20px;
+    /* height: 100%; */
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start;
+    min-width: 100%;
+    
 }
 
 section p {
     color: var(--light);
-    font-size: 14px;
-    margin:8px;
-    line-height: 20px;
+    margin-left:6px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .code {
-    padding:0px;
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3)0%, rgba(232, 102, 236, 0.6)100%);
+    margin-left:6px;
+    padding: 20px 0 20px 12px;
+    border-radius: var(--border-radius);
+    height: 100%; /* Fill the available space within the .card */
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Expand and take the remaining space within the .card */
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
 }
+
+h3 {
+    text-align: center;
+    color: var(--light);
+}
+
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    .code-content {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:24px;
+        }
+    /* .card:last-child {
+        flex-grow: 1;
+        } */
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .code-content {
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:24px;
+        }
+    header {
+        width: 75%;
+        }
+    }
+
+pre:active {
+    user-select: all;
+    }
+  
