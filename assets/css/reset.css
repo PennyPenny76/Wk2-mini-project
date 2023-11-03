@@ -1,24 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(72, 72, 72);
-    color:white;
-  }
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
-  html {
-    height: 100%;
-  }
+html {
+height: 100%;
+}
   
-  body {
-    min-height: 100%;
-    line-height: 2;
-    font-family: sans-serif;
-  }
-  
-  h1,
-  h2,
-  h3,
-   {
-    font-size: 100%;
-  }
+body {
+min-height: 100%;
+line-height: 1;
+font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+font-size: 100%;
+font-family: inherit;
+}
+
+ul {
+list-style: none;
+}

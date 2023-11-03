@@ -10,63 +10,82 @@
 </head>
 
 
-    <!-- Header -->
-<header>
-    <h1>CSS Snippet Cheatsheet</h1>
-    <p>
-    Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to capy.
-    </p>
-</header>
+<body>  <!-- Header -->
+    <header>
+        <h1>CSS Snippet Cheatsheet</h1>
+        <p>
+        Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to capy.
+        </p>
+    </header>
 
-<!-- Body -->
-<body>
-<main>
-    <!-- CSS snippets -->
-    <div class="code-content">
-        <section class="card">
-          <h2 class="code-header">Flexbox Row</h2>
-            <p>Use these three properties to create a Flexbox row layout.</p>
-            <pre class="code">
+    <!-- Body -->
+
+    <main>
+        <!-- CSS snippets -->
+        <section class="code-content justify-center">
+            <div class="card-column">
+                <figure class="card">
+                    <h2 class="code-header">Flexbox Row</h2>
+                    <div class="card-body">
+                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    </div>
+                    <pre class="code"><code>
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    }</pre>
-        </section>
-        <section class="card">
-            <h2 class="code-header">Flexbox Column</h2>
-            <p>Use this to create a Flexbox Column layout.</p>
-            <pre class="code">
+    }</pre></code>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card">
+                    <h2 class="code-header">Flexbox Column</h2>
+                    <div class="card-body">
+                    <p>Use this to create a Flexbox Column layout.</p>
+                    </div>
+                    <pre class="code"><code>
 .column {
 display: flex;
 flex-direction: column;
-}</pre>
-          </section>
-        <section class="card">
-            <h2 class="code-header">CSS Grid Layout</h2>
-            <p>Build a 12-column layout using CSS Grid.</p>
-            <pre class="code">
+}</pre></code>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card">
+                    <h2 class="code-header">CSS Grid Layout</h2>
+                    <div class="card-body">
+                    <p>Build a 12-column layout using CSS Grid.</p>
+                    </div>
+                    <pre class="code"><code>
 .grid {
 display: grid;
 width:100%;
 grid-tempate-column:
 repeat(12, lfr);
-}</pre>
-        </section>
-        <section class="card">
-            <h2 class="code-header">Linear Gradients</h2>
-            <p>This will create a background linear gradient form top to bottom.</p>
-            <pre class="code">
+}</pre></code>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card">
+                    <h2 class="code-header">Linear Gradients</h2>
+                    <div class="card-body">
+                    <p>This will create a background linear gradient form top to bottom.</p>
+                    </div>
+                    <pre class="code"><code>
 .linear-gradient-background{
     background-image: linear-gradient(
         rgba(232, 102, 236, 0.3) 0%,
         rgba(232, 102, 236, 0.6) 100%);
-}</pre>
-        </section>
-        <section class="card">
-            <h2 class="code-header">Box Transition Glow</h2>
-            <p>Use transition and box shadows to glow on hover.</p>
-            <pre class="code">
+}</pre></code>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card">
+                    <h2 class="code-header">Box Transition Glow</h2>
+                    <div class="card-body">
+                    <p>Use transition and box shadows to glow on hover.</p>
+                    </div>
+                    <pre class="code"><code>
 .code-card .card-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;}
@@ -76,24 +95,30 @@ repeat(12, lfr);
         box-shadow: inset 0px 0px 8px
     rgba(232, 102, 236, 1), 0 0 15px
     rgba(232, 102, 236, 1);
-    }</pre>
-        </section>
-        <section class="card">
-            <h2 class="code-header">Overlay Card with Title</h2>
-            <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
-            <pre class="code">
+    }</pre></code>
+                </figure>
+            </div>
+            <div class="card-column">
+                <figure class="card">
+                    <div class="card-body">
+                    <h2 class="code-header">Overlay Card with Title</h2>
+                    </div>
+                    <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                    <pre class="code"><code>
 .card-header {
     position: relative;
     margin-top: -20px;
-}</pre>
+}</pre></code>
+                </figure>
+            </div>
         </section>
-    </div>
-</main>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>
+        Made with ❤️ and CSS
+        </h3>
+    </footer>
 </body>
-<!-- Footer -->
-<footer>
-    <h3>
-      Made with ❤️ and CSS
-    </h3>
-  </footer>
 </html>
